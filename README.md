@@ -6,19 +6,19 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+- ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
 
-* System dependencies
+* Rails version
+- Rails 6.1.7.3
 
-* Configuration
+* Node version
+- v16.19.1 (v18 is not compatible, downgrade to v16)
 
-* Database creation
+* User interface css
+- docs: https://semantic-ui.com/
+- gems: https://github.com/doabit/semantic-ui-sass
 
-* Database initialization
+* Issues
+- semantic ui javascript need to add this code to make sure javascript working properly, add this code line in file app/javascript/packs/application.js
+$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
