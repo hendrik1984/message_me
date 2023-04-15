@@ -5,8 +5,10 @@
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
+import jQuery from "jquery"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import '@doabit/semantic-ui-sass'
 
 Rails.start()
 Turbolinks.start()
