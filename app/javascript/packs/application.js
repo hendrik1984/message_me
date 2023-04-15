@@ -16,4 +16,13 @@ ActiveStorage.start()
 
 // Added to here to activate javascript, since we are using rails need to wait until
 // turbolinks load first and then run the functioon dropdown semantic ui
-$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+//$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
+
+$(document).on("turbolinks:load", () => {
+  $(".ui.dropdown").dropdown();
+
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  })
+;
+})
