@@ -13,3 +13,7 @@ import '@doabit/semantic-ui-sass'
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+// Added to here to activate javascript, since we are using rails need to wait until
+// turbolinks load first and then run the functioon dropdown semantic ui
+$(document).on("turbolinks:load", () => $(".ui.dropdown").dropdown());
